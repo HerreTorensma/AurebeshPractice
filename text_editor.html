@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurebesh Text Editor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/text_editor.js"></script>
+
+</head>
+<body>
+    <div id="bottom">
+        <a href="index.html">Home</a>
+    </div>
+
+    <div id="text-editor-container">
+        <div id="stage">
+
+                <button id="save-button" onclick="saveList()"><i class="fas fa-save"></i></button>
+                
+                <a id="download-link" style="display:none"></a>
+                <button id="download-button" onclick="downloadList()"><i class="fas fa-file-download"></i></button>
+                
+                <input type="file" id="upload-input" style="display:none"></input>
+                <button id="upload-button" onclick="uploadList()"><i class="fas fa-file-upload"></i></button>
+                
+                <div id="list">
+                    
+                </div>
+                
+                <button id="add-button" class="icon-button" onclick="addItem()"><i class="far fa-plus-square"></i></button>
+                <button id="clear-button" onclick="clearList()">Clear</button>
+            
+        </div>
+    </div>
+</body>
+</html>

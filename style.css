@@ -1,0 +1,104 @@
+@font-face {
+	font-family: Aurebesh;
+	src: url(Aurebesh.otf)
+}
+
+#aurebesh-text {
+	font-family: Aurebesh;
+	font-size: 100px;
+	padding: 10px;
+
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+#stage-container {
+	width: 70%;
+	/* height: 50vh; */
+
+	/* padding: 100px; */
+
+	/* Center horizontally */
+	/* margin: 10px; */
+	/* padding: 10px; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#stage {
+	padding: 100px;
+	text-align: center;
+	background-color: black;
+	border: 3px solid rgb(255, 213, 78);
+	border-radius: 3px;
+	color: rgb(255, 213, 78);
+	font-size: 36px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#text-editor-container {
+	width: 70%;
+	
+	margin: auto;
+
+}
+#stage input[type=text] {
+	background-color: rgb(20, 20, 20);
+	color: rgb(255, 213, 78);
+	border: 3px solid rgb(255, 213, 78);
+	border-radius: 3px;
+	font-size: 36px;
+	margin: 10px;
+	width: 70%;
+}
+#stage input[type=file] {
+	border: 3px solid rgb(255, 213, 78);
+	border-radius: 3px;
+	margin: 10px;
+	font-size: 36px;
+}
+
+#stage button {
+	background-color: rgb(20, 20, 20);
+	color: rgb(255, 213, 78);
+	border: 3px solid rgb(255, 213, 78);
+	border-radius: 3px;
+	font-size: 36px;
+	margin: 10px;
+}
+#stage button:hover {
+	text-shadow: 0 0 8px rgb(55, 255, 0);
+}
+#stage .icon-button {
+	background-color: black;
+	border: none;
+}
+
+#output {
+	padding: 30px;
+}
+a {
+	font-size: 20px;
+	color: rgb(55, 255, 0);
+}
+a:hover {
+	text-shadow: 0 0 8px rgb(255, 213, 78);
+}
+#bottom a {
+	/* position: absolute; */
+	/* bottom: 10px; */
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-image: url("images/stars.jpg");
+	/* background-size: cover; */
+}
+
+::selection {
+	background-color: rgb(55, 255, 0);
+}
